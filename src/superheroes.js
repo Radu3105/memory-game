@@ -47,7 +47,7 @@ const superheroes = [
         imgSrc: Venom,
     },
     {
-        title: 'WonderWoman',
+        title: 'Wonder Woman',
         imgSrc: WonderWoman,
     },
 ];

@@ -1,16 +1,23 @@
 .card-container {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     width: 200px;
-    height: 300px;
-    border: 1px solid white;
+    height: 280px;
     gap: 10%;
+    color: black;
+    background-color: rgb(241, 252, 255);
+    border: 5px solid black;
+    border-radius: 10px;
 }
 
-.card-container:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.card-container p {
+    margin: 0;
+}
+
+.card-image {
+    height: 110px;
 }
 
 .card-title {

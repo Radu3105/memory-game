@@ -1,4 +1,26 @@
 #root {
   width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.app {
   height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  height: 100%;;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.round {
+  text-align: center;
+  font-size: 30px;
 }

@@ -1,4 +1,5 @@
 import "./App.css";
+import backgroundImg from './assets/images/background.jpg';
 import superheroes from "./superheroes";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -12,7 +13,6 @@ function App() {
     const DIFFICULTY = 'EASY';
 
     const cards = superheroes;
-    console.log(cards);
 
     const [currentScore, setCurrentScore] = useState(0);
     const [highScore, setHighScore] = useState(0);
@@ -79,10 +79,15 @@ function App() {
     }
 
     return (
-        <>
-            <Scoreboard currentScore={currentScore} highScore={highScore} currentRound={currentScore} rounds={MAX_SCORE[DIFFICULTY]}/>
-            <CardList cards={cardsToDisplay} onCardClick={handleCardClick} />
-        </>
+        <div style={{backgroundImage: `url(${backgroundImg})`}} className="app">
+            <div className="content">
+                <Scoreboard currentScore={currentScore} highScore={highScore}/>
+                <CardList cards={cardsToDisplay} onCardClick={handleCardClick} />
+                <div>
+                    <p className="round">Round: {currentScore} / {MAX_SCORE[DIFFICULTY]}</p>
+                </div>
+            </div>
+        </div>
     );
 }
 
